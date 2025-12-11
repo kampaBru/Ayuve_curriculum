@@ -6,14 +6,14 @@
   align-items: flex-start;
   padding: $spacing-md;
   gap: 78px; //separación entre páginas
-  background-image: url(../img/textura_tela_fondo3.png);//el color es #cec3b4
+  background-image: url(./img/textura_tela_fondo3.png);//el color es #cec3b4
   background-repeat: repeat;
   background-size: 50%;
 }//colocación de las paginas y separaciones
 
 .cv-section, .carta-section {
     
-    background-image: url(../img/textura_papel.png); //el color es #d3cfc7
+    background-image: url(./img/textura_papel.png); //el color es #d3cfc7
     width: $a4-width;
     height: $a4-height;
     margin-bottom: 200px; 

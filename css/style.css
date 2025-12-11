@@ -176,13 +176,13 @@ footer {
   align-items: flex-start;
   padding: 24px;
   gap: 78px;
-  background-image: url(../img/textura_tela_fondo3.png);
+  background-image: url(./img/textura_tela_fondo3.png);
   background-repeat: repeat;
   background-size: 50%;
 }
 
 .cv-section, .carta-section {
-  background-image: url(../img/textura_papel.png);
+  background-image: url(./img/textura_papel.png);
   width: 210mm;
   height: 297mm;
   margin-bottom: 200px;
