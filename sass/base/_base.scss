@@ -1,0 +1,32 @@
+@import 'reset';       // Primero: limpia estilos por defecto
+@import 'typography';  // Segundo: define fuentes y textos
+@import 'animations';  // Tercero: animaciones
+
+html {
+    box-sizing: border-box;
+    font-size: 16px; 
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    min-width: $sbp-desktop;
+    margin: 0 auto;
+  }
+  
+  .container {
+    width: $sbp-desktop;
+    margin: 0 auto;
+  }
+  
+  
+  /* Selección de texto
+     ========================================================================== */
+  ::selection {
+    background-color: $color-primary; // variable de color principal
+    color: white;
+  }

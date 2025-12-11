@@ -1,0 +1,128 @@
+.cv-section cv-page-1{
+  border-right: $color-light-grey;
+
+}
+.cv-header {
+    
+  h1 {
+    .apellido {
+      display: block;
+    }
+  }
+}
+
+.cv-contact {
+    
+  .contacto-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: $spacing-xs;
+      font-size: 0.9em;
+
+      i {
+          color: $color-grey; 
+          width: 20px;           
+          margin-right: $spacing-xs; 
+          text-align: center;
+      }
+
+      .contacto-texto {
+          color: $text-dark;
+          line-height: 1.5;
+      }
+      
+      
+  }
+}
+.cv-about {
+  border-bottom: 1px solid $color-light-grey;
+  padding-bottom: 20px; // Espacio entre el contenido y la línea
+  margin-bottom: 20px;   // Espacio entre la línea y el siguiente bloque
+}
+.cv-education {
+  border-bottom: 1px solid $color-light-grey;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+.cv-experience {
+  .experience-item {
+      border-bottom: 1px solid $color-light-grey;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+  }
+  .experience-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0; 
+}
+
+  h3 { 
+      font-size: 1.1em;
+      font-weight: $font-regular;
+      color: $dark;
+      margin-top: 0;
+      margin-bottom: 2px;
+  }
+    
+  .rol-fecha {
+    font-size: 0.9em;
+    color: $color-grey;
+    margin-bottom: $spacing-xs; 
+    font-weight: $font-light; 
+    display: block;
+  }
+
+  .responsabilidades-lista {
+    list-style: disc; 
+    padding-left: 1.2em;
+    margin-top: 0; 
+      
+    li {
+        font-size: 0.9em;
+        line-height: 1.6;
+        margin-bottom: 5px; 
+        color: $text-dark;
+    }
+  }
+}
+
+
+
+.cv-skills {
+  ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      padding-left: 0;
+  }
+  
+  li {
+      font-size: 0.95em;
+      line-height: 1.5;
+      margin-bottom: 3px;
+      color: $text-dark;
+  }
+}
+
+.cv-page-2{
+
+  .cv-experience-left, .cv-experience-right {
+    
+    .experience-item {
+      margin-bottom: $spacing-lg;
+      border-bottom: 1px solid $color-light-grey;
+      padding-bottom: 20px;
+      margin-bottom: 20px; 
+    }
+    .experience-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0; 
+    }
+
+   
+  }
+}

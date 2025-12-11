@@ -1,0 +1,9 @@
+.btn {
+    font-family: $font-primary;
+    font-weight: 500; // Medium
+    letter-spacing: 0.05em;
+  
+    &--bold {
+      font-weight: 700;
+    }
+  }

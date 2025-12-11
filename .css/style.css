@@ -1,0 +1,400 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0 0 0 18px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #1C1C1C;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  margin-top: 0;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+h2, h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #1C1C1C;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Inter", sans-serif;
+  color: #828282;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+}
+
+ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Selección de texto
+   ========================================================================== */
+::selection {
+  background-color: #1C1C1C;
+  color: white;
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+.btn--bold {
+  font-weight: 700;
+}
+
+.cv-page-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px;
+}
+.cv-page-1 .cv-header {
+  grid-column: span 2/span 2;
+}
+.cv-page-1 .cv-contact {
+  grid-row-start: 2;
+}
+.cv-page-1 .cv-about {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+.cv-page-1 .cv-education {
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+.cv-page-1 .cv-skills {
+  grid-column-start: 1;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+.cv-page-1 .cv-experience-p1 {
+  grid-row: span 4/span 4;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  border-left: 1px solid #BDBDBD;
+  padding-left: 20px;
+}
+
+.cv-page-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 20px;
+}
+.cv-page-2 .cv-header-p2 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+.cv-page-2 .title-section2 {
+  grid-row-start: 2;
+}
+.cv-page-2 .cv-experience-left {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  border-right: 1px solid #BDBDBD;
+  padding-right: 20px;
+}
+.cv-page-2 .cv-experience-right {
+  grid-row: span 3/span 3;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+footer {
+  display: flex;
+  color: #828282;
+  text-align: center;
+  padding: 20px 0;
+  align-items: flex-end;
+}
+
+.container-principal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 78px;
+  background-image: url(../img/textura_tela_fondo3.png);
+  background-repeat: repeat;
+  background-size: 50%;
+}
+
+.cv-section, .carta-section {
+  background-image: url(../img/textura_papel.png);
+  width: 210mm;
+  height: 297mm;
+  margin-bottom: 200px;
+  padding: 40px 28px;
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.9), inset 0 -1px 2px rgba(0, 0, 0, 0.08), 0 2px 5px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.15), 0 15px 35px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(211, 207, 199, 0.6);
+  position: relative;
+}
+.cv-section::before, .carta-section::before {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  right: 10%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  filter: blur(25px);
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+body * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body p {
+  margin: 0;
+  padding: 0;
+}
+body ul {
+  margin: 0;
+  padding: 0 0 0 18px;
+}
+body body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #1C1C1C;
+}
+body h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  margin-top: 0;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+body h2, body h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #1C1C1C;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+body p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Inter", sans-serif;
+  color: #828282;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+}
+body ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.cv-section cv-page-1 {
+  border-right: #BDBDBD;
+}
+
+.cv-header h1 .apellido {
+  display: block;
+}
+
+.cv-contact .contacto-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.9em;
+}
+.cv-contact .contacto-item i {
+  color: #828282;
+  width: 20px;
+  margin-right: 8px;
+  text-align: center;
+}
+.cv-contact .contacto-item .contacto-texto {
+  color: #333333;
+  line-height: 1.5;
+}
+
+.cv-about {
+  border-bottom: 1px solid #BDBDBD;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.cv-education {
+  border-bottom: 1px solid #BDBDBD;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.cv-experience .experience-item {
+  border-bottom: 1px solid #BDBDBD;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.cv-experience .experience-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.cv-experience h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+.cv-experience .rol-fecha {
+  font-size: 0.9em;
+  color: #828282;
+  margin-bottom: 8px;
+  font-weight: 500;
+  display: block;
+}
+.cv-experience .responsabilidades-lista {
+  list-style: disc;
+  padding-left: 1.2em;
+  margin-top: 0;
+}
+.cv-experience .responsabilidades-lista li {
+  font-size: 0.9em;
+  line-height: 1.6;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+.cv-skills ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  padding-left: 0;
+}
+.cv-skills li {
+  font-size: 0.95em;
+  line-height: 1.5;
+  margin-bottom: 3px;
+  color: #333333;
+}
+
+.cv-page-2 .cv-experience-left .experience-item, .cv-page-2 .cv-experience-right .experience-item {
+  margin-bottom: 32px;
+  border-bottom: 1px solid #BDBDBD;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.cv-page-2 .cv-experience-left .experience-item:last-child, .cv-page-2 .cv-experience-right .experience-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.carta-section .carta-contenido {
+  padding-top: 40px;
+  width: 70%;
+}
+.carta-section .carta-contenido p:nth-of-type(1), .carta-section .carta-contenido p:nth-of-type(2) {
+  font-weight: 800;
+}
+.carta-section h1 {
+  font-size: 24px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #BDBDBD;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.carta-section .cv-header p {
+  font-size: 14px;
+  padding: 1px 0;
+}
+.carta-section p {
+  margin-top: 10px;
+}
+.carta-section .firma {
+  margin-top: 40px;
+}
+.carta-section .firma-nombre {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+html * {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,70 @@
+//Breakpoints
+$sbp-tablet: 576px;           // Tablet
+$sbp-tablet-horizontal: 768px; // Tablet en Horizontal
+$sbp-desktop: 1200px;          // Desktop Estándar
+$sbp-desktop-xl: 1600px;      // Desktop XL (Diseño de 1200px)
+
+//anchos de contenedor
+$container-max-width-mobile: 90%;
+$container-max-width-tablet: 750px;
+$container-max-width-desktop: 1200px;
+$container-max-width-desktop-xl: 1600px;
+
+
+//anchos de paginas para el diseño
+// $a4-width: 650px; 
+// $a4-height: $a4-width * 1.414;
+$a4-width: 210mm;
+$a4-height: 297mm;
+
+
+// ===== COLORS =====
+$color-primary: #1C1C1C;       // Rosa oscuro (logo, botones principales)
+$color-secondary: #000;     // Rosa claro (fondos, acentos)
+$color-grey: #828282;        // Gris neutro (textos secundarios)
+$color-light-grey: #BDBDBD; //Color de líneas divisorias
+$dark: #333333;          // Textos
+$light: #FFF9FB;         // Fondo claro
+$white: #FFFFFF;         // Blanco puro
+$black: #000000;         // Negro
+$text-dark: $dark; // Añade esta línea (usa el mismo valor que $dark)
+$light: #FFF9FB;
+$white: #FFFFFF;
+$black: #000000;
+
+
+$background-light: #FFF9FB;
+
+// Colores semánticos
+$error: #FF5252;         // Errores
+$success: #4CAF50;       // Éxito
+$warning: #FFC107;       // Advertencias
+
+
+
+// Sombras
+$shadow-sm: 0 2px 4px rgba($black, 0.1);
+$shadow-md: 0 4px 8px rgba($black, 0.15);
+
+// ===== TIPOGRAFÍA =====
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Inter', sans-serif;
+$font-base-size: 12px;
+
+// Pesos de fuente
+$font-light: 500;
+$font-regular: 600;
+$font-medium: 800;
+
+// ===== ESPACIADOS =====
+$spacing-xs: 8px;
+$spacing-sm: 16px;
+$spacing-md: 20px;
+$spacing-md: 24px;
+$spacing-lg: 32px;
+
+
+// Tamaños de logo
+$logo-width: 80px; //desktop
+$logo-height: 40px; //desktop
+$logo-width-mobile: 140px; //versión responsive

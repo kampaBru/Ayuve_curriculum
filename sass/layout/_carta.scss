@@ -1,0 +1,45 @@
+.carta-section{
+  
+
+  .carta-contenido {
+    padding-top: 40px;
+    width: 70%;
+    
+
+    p {
+    &:nth-of-type(1),
+    &:nth-of-type(2)
+      {
+        font-weight: $font-medium;
+      }
+    }
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 50px;
+     border-bottom: 1px solid $color-light-grey;
+    padding-bottom: 20px; // Espacio entre el contenido y la línea
+    margin-bottom: 20px;   // Espacio entre la línea y el siguiente bloque
+    
+    
+  }
+  .cv-header p{
+    font-size: 14px;
+    padding: 1px 0;
+    
+
+  }
+  p {
+    margin-top: 10px;
+  }
+  .firma {
+    margin-top: 40px;
+  }
+  .firma-nombre{
+    font-size: 14px;
+    font-weight: $font-medium;
+
+  }
+  
+}
